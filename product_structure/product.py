@@ -7,11 +7,10 @@ class Product(ABC):
 
     @property
     def name(self):
-        return self._name
+        return self.__name
 
     @name.setter
     def name(self, value):
-        if value != '':
-            self._name = value
-        else:
-            raise Exception('Name can not be empty string!')
+        if value == '':
+            raise ValueError('You must add name of the product!')
+        self.__name = value
