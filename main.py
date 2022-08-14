@@ -1,5 +1,6 @@
-
+from product_structure.food import Food
 from product_structure.product import Product
 
-chicken_fillet = Product('chicken fillet', 'Food')
+chicken_fillet = Food('Chicken fillet')
+
 print(chicken_fillet)
