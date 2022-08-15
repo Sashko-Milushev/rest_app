@@ -1,22 +1,12 @@
 from product_structure.other import Other
 
 
-class Cleaning(Other):
-    def __init__(self, name: str, quantity: str, purpose: str, price: float):
+class SugarPacks(Other):
+    def __init__(self, name: str, quantity: str, type_of_sugar: str, price: float):
         super().__init__(name)
-        self.purpose = purpose
         self.quantity = quantity
+        self.type_of_sugar = type_of_sugar
         self.price = price
-
-    @property
-    def purpose(self):
-        return self.__purpose
-
-    @purpose.setter
-    def purpose(self, value):
-        if value == '':
-            raise ValueError('You must add purpose for the cleaning agent!')
-        self.__purpose = value
 
     @property
     def quantity(self):
@@ -25,7 +15,7 @@ class Cleaning(Other):
     @quantity.setter
     def quantity(self, value):
         if value == '':
-            raise ValueError('You must add quantity for the cleaning agent!')
+            raise ValueError('You must add quantity for the sugar packs!')
         self.__quantity = value
 
     @property
@@ -35,7 +25,17 @@ class Cleaning(Other):
     @price.setter
     def price(self, value):
         if value == '':
-            raise ValueError('You must add price for the cleaning agent!')
+            raise ValueError('You must add price for the sugar pack!')
         if not value.isfloat():
             raise ValueError('You must add float number as price(for example : 1,99)!')
         self.__price = value
+
+    @property
+    def type_of_sugar(self):
+        return self.__type_of_sugar
+
+    @type_of_sugar.setter
+    def type_of_sugar(self, value):
+        if value == '':
+            raise ValueError('You must add type of sugar(for example : white/brown)!')
+        self.__type_of_sugar = value
