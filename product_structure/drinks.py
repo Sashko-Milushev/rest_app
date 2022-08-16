@@ -38,7 +38,7 @@ class Drinks(Product):
     @price.setter
     def price(self, value):
         if value == '':
-            raise ValueError('You must add price for the drick!')
+            raise ValueError('You must add price for the drink!')
         if not value.isfloat():
             raise ValueError('You must add float number as price(for example : 1,99)!')
         self.__price = value
