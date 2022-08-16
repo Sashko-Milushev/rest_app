@@ -1,9 +1,6 @@
-from product_structure.product import Product
+from product_structure.drinks import Drinks
 
 
-class Wine(Product):
-    def __init__(self, name: str, quantity: str, price: float):
-        super().__init__(name)
-        self.quantity = quantity
-        self.price = price
-
+class Wine(Drinks):
+    def __init__(self, name: str, quantity: str, expiration_date: str, price: float):
+        super().__init__(name, quantity, expiration_date, price)
