@@ -1,7 +1,8 @@
-from abc import ABC
+from abc import ABC, abstractmethod
 
 
 class Dish(ABC):
+    @abstractmethod
     def __init__(self, name: str, weight: int, ingredients: list, price: float):
         self.name = name
         self.weight = weight

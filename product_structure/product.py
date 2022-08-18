@@ -1,7 +1,8 @@
-from abc import ABC
+from abc import ABC, abstractmethod
 
 
 class Product(ABC):
+    @abstractmethod
     def __init__(self, name):
         self.name = name
 
