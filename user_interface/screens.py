@@ -1,5 +1,5 @@
 import tkinter as tk
-from user_interface.auth_service import register, login
+from user_interface.auth_service import register, login, get_current_user
 
 
 def clear_window(window):
@@ -34,10 +34,10 @@ def render_login_screen(window):
 def render_main_screen(window):
     tk.Button(window, text='Login', bg='orange', fg='white', command=lambda: render_login_screen(window)).grid(row=0, column=0)
 
-    tk.Button(window, text='Register', bg='green', fg='yellow', command=lambda: render_register_screem(window)).grid(row=0, column=1)
+    tk.Button(window, text='Register', bg='green', fg='yellow', command=lambda: render_register_screen(window)).grid(row=0, column=1)
 
 
-def render_register_screem(window):
+def render_register_screen(window):
     clear_window(window)
 
     tk.Label(window, text='Enter your username: ').grid(row=0, column=0)
@@ -68,7 +68,11 @@ def render_register_screem(window):
 
     tk.Button(window, text='Submit', bg='green', fg='yellow', command=on_register).grid(row=4, column=1)
 
+
 def render_home_screen(window):
     clear_window(window)
+    current_user = get_current_user()
+    current_username = current_user['username']
+    tk.Label(window, text=f'Current user: {current_username}', fg='orange').grid(row=0, column=0)
 
 
