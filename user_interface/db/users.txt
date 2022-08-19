@@ -1,2 +1,5 @@
 {"username": "sashko", "password": "12345"}
 {"username": "ralica", "password": "1212"}
+{"username": "test", "password": "test"}
+{"username": "test2", "password": "test"}
+{"username": "test3", "password": "1234"}
