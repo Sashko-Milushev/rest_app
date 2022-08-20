@@ -2,6 +2,7 @@ import tkinter as tk
 
 from user_interface.auth_service import get_current_user
 from user_interface.screens.clear_window import clear_window
+from user_interface.screens.order.order import render_order
 
 
 def render_home_screen(window):
@@ -17,7 +18,7 @@ def render_home_screen(window):
               width=15,
               fg='white',
               font=('Helvetica', '16'),
-              command=lambda: print('oredrs')).grid(row=2, column=1)
+              command=lambda: render_order(window)).grid(row=2, column=1)
 
     tk.Button(window,
               text='Change menu',

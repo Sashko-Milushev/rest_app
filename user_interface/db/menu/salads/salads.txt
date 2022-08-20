@@ -1,0 +1,2 @@
+{"name": "Tomatoes with herbs", "weight": 250}
+{"name": "Cucumbers with garlic", "weight": 250}

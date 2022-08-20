@@ -1,0 +1,1 @@
+sashko: {'name': 'Cucumbers with garlic', 'weight': 250}
