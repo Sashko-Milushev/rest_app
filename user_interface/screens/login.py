@@ -3,6 +3,7 @@ import tkinter as tk
 from user_interface.auth_service import login
 from user_interface.screens.home import render_home_screen
 from user_interface.screens.clear_window import clear_window
+from user_interface.util import clear_current_order
 
 
 def render_login_screen(window):
@@ -23,6 +24,7 @@ def render_login_screen(window):
         result = login(username_value, password_value)
         if result:
             render_home_screen(window)
+            clear_current_order()
         else:
             tk.Label(window, text='Invalid credentials', fg='red').grid(row=2, column=1)
 
