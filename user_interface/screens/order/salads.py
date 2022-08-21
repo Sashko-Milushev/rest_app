@@ -30,3 +30,12 @@ def render_salads(window):
                       fg='white',
                       font=('Helvetica', '11'),
                       command=lambda x=salad: order_append(x, current_username, render_salads, window)).grid(row=row, column=column)
+
+    tk.Button(window,
+              text='BACK',
+              bg='#F1B911',
+              height=8,
+              width=20,
+              fg='white',
+              font=('Helvetica', '11'),
+              command=lambda: print('go back')).grid(row=5, column=2)
