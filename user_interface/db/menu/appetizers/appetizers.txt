@@ -1,1 +1,1 @@
-{"name": "Goat cheese with figs", "weight": 165}
+{"name": "Goat cheese", "weight": 165}
