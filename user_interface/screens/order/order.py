@@ -4,6 +4,7 @@ from user_interface.auth_service import get_current_user
 from user_interface.screens.clear_window import clear_window
 from user_interface.screens.order.appetizers import render_appetizers
 from user_interface.screens.order.desserts import render_desserts
+from user_interface.screens.order.drinks import render_drinks
 from user_interface.screens.order.main_dishes import render_main_dishes
 from user_interface.screens.order.salads import render_salads
 
@@ -25,6 +26,9 @@ def render_order(window):
 
     tk.Label(window, text='DESSERTS:', fg='#9834D1', font=('Helvetica', 11, 'bold')).grid(row=7, column=0)
     render_desserts(window)
+
+    tk.Label(window, text='DRINKS:', fg='#2A8A1E', font=('Helvetica', 11, 'bold')).grid(row=9, column=0)
+    render_drinks(window)
 
     # tk.Button(window,
     #           text='Appetizers',

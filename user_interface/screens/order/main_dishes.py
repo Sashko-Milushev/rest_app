@@ -23,7 +23,7 @@ def render_main_dishes(window):
             tk.Button(window,
                       text=f'{dish_name}',
                       bg='#F1B911',
-                      height=5,
+                      height=3,
                       width=11,
                       fg='white',
                       font=('Helvetica', '11'),

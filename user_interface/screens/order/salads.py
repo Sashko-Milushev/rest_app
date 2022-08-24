@@ -23,7 +23,7 @@ def render_salads(window):
             tk.Button(window,
                       text=f'{salad_name}',
                       bg='#98D134',
-                      height=5,
+                      height=3,
                       width=11,
                       fg='white',
                       font=('Helvetica', '11'),

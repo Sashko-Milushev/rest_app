@@ -22,7 +22,7 @@ def render_appetizers(window):
             tk.Button(window,
                       text=f'{appetizer_name}',
                       bg='#34BDD1',
-                      height=5,
+                      height=3,
                       width=11,
                       fg='white',
                       font=('Helvetica', '11'),

@@ -23,7 +23,7 @@ def render_desserts(window):
             tk.Button(window,
                       text=f'{dessert_name}',
                       bg='#9834D1',
-                      height=5,
+                      height=3,
                       width=11,
                       fg='white',
                       font=('Helvetica', '11'),
