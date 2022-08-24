@@ -1,1 +1,2 @@
 {"name": "Chocolate cake", "weight": 165}
+{"name": "Pancake", "weight": 165}
