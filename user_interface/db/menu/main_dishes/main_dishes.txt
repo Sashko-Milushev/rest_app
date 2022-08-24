@@ -1,1 +1,2 @@
 {"name": "Pizza", "weight": 350}
+{"name": "Chicken steak", "weight": 350}

@@ -3,8 +3,8 @@ import tkinter as tk
 from user_interface.auth_service import get_current_user
 from user_interface.screens.clear_window import clear_window
 from user_interface.screens.order.appetizers import render_appetizers
+from user_interface.screens.order.main_dishes import render_main_dishes
 from user_interface.screens.order.salads import render_salads
-
 
 
 def render_order(window):
@@ -18,6 +18,9 @@ def render_order(window):
 
     tk.Label(window, text='APPETIZERS:', fg='#34BDD1', font=('Helvetica', 11, 'bold')).grid(row=3, column=0)
     render_appetizers(window)
+
+    tk.Label(window, text='MAIN DISHES:', fg='#F1B911', font=('Helvetica', 11, 'bold')).grid(row=5, column=0)
+    render_main_dishes(window)
 
     # tk.Button(window,
     #           text='Appetizers',
