@@ -5,6 +5,7 @@ from user_interface.screens.clear_window import clear_window
 from user_interface.screens.order.appetizers import render_appetizers
 from user_interface.screens.order.desserts import render_desserts
 from user_interface.screens.order.drinks import render_drinks
+from user_interface.screens.order.finish import finish_order
 from user_interface.screens.order.main_dishes import render_main_dishes
 from user_interface.screens.order.others import render_others
 from user_interface.screens.order.salads import render_salads
@@ -33,6 +34,16 @@ def render_order(window):
 
     tk.Label(window, text='OTHER:', fg='#DA9641', font=('Helvetica', 11, 'bold')).grid(row=11, column=0)
     render_others(window)
+
+    tk.Button(window,
+              text=f'FINISH ORDER',
+              bg='#C14A1D',
+              height=3,
+              width=11,
+              fg='white',
+              font=('Helvetica', '11'),
+              command=lambda: finish_order(window)).grid(row=13, column=0)
+
 
     # tk.Button(window,
     #           text='Appetizers',

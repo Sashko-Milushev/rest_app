@@ -1,0 +1,9 @@
+sashko: {'name': 'Caprese', 'weight': 250}
+sashko: {'name': 'Caprese', 'weight': 250}
+sashko: {'name': 'Goat cheese', 'weight': 165}
+sashko: {'name': 'Mushrooms', 'weight': 165}
+sashko: {'name': 'Pizza', 'weight': 350}
+sashko: {'name': 'Chicken steak', 'weight': 350}
+sashko: {'name': 'Beer', 'weight': 500}
+sashko: {'name': 'Beer', 'weight': 500}
+sashko: {'name': 'Garlic sauce', 'weight': 125}
