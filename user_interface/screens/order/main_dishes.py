@@ -27,5 +27,5 @@ def render_main_dishes(window):
                       width=11,
                       fg='white',
                       font=('Helvetica', '11'),
-                      command=lambda x=dish: order_append(x, current_username, render_main_dishes, window)).grid(row=row, column=column)
+                      command=lambda x=dish_name: order_append(x, render_main_dishes, window)).grid(row=row, column=column)
             column += 1

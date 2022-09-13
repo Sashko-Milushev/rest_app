@@ -27,7 +27,7 @@ def render_salads(window):
                       width=11,
                       fg='white',
                       font=('Helvetica', '11'),
-                      command=lambda x=salad: order_append(x, current_username, render_salads, window)).grid(row=row, column=column)
+                      command=lambda x=salad_name: order_append(x, render_salads, window)).grid(row=row, column=column)
             column += 1
 
 

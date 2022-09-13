@@ -26,5 +26,5 @@ def render_appetizers(window):
                       width=11,
                       fg='white',
                       font=('Helvetica', '11'),
-                      command=lambda x=appetizer: order_append(x, current_username, render_appetizers, window)).grid(row=row, column=column)
+                      command=lambda x=appetizer_name: order_append(x, render_appetizers, window)).grid(row=row, column=column)
             column += 1

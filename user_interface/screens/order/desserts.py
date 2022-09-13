@@ -27,6 +27,6 @@ def render_desserts(window):
                       width=11,
                       fg='white',
                       font=('Helvetica', '11'),
-                      command=lambda x=dessert: order_append(x, current_username, render_desserts, window)).grid(
+                      command=lambda x=dessert_name: order_append(x, render_desserts, window)).grid(
                       row=row, column=column)
             column += 1

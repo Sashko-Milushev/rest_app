@@ -42,7 +42,7 @@ def render_order(window):
               width=11,
               fg='white',
               font=('Helvetica', '11'),
-              command=lambda: finish_order(window)).grid(row=13, column=0)
+              command=lambda: finish_order(window, current_username)).grid(row=13, column=0)
 
 
     # tk.Button(window,

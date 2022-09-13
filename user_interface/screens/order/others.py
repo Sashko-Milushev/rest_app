@@ -27,6 +27,6 @@ def render_others(window):
                       width=11,
                       fg='white',
                       font=('Helvetica', '11'),
-                      command=lambda x=other: order_append(x, current_username, render_others, window)).grid(
+                      command=lambda x=other_name: order_append(x, render_others, window)).grid(
                       row=row, column=column)
             column += 1

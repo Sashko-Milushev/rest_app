@@ -27,6 +27,6 @@ def render_drinks(window):
                       width=11,
                       fg='white',
                       font=('Helvetica', '11'),
-                      command=lambda x=drink: order_append(x, current_username, render_drinks, window)).grid(
+                      command=lambda x=drink_name: order_append(x, render_drinks, window)).grid(
                       row=row, column=column)
             column += 1
