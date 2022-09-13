@@ -9,10 +9,12 @@ from user_interface.screens.order.finish import finish_order
 from user_interface.screens.order.main_dishes import render_main_dishes
 from user_interface.screens.order.others import render_others
 from user_interface.screens.order.salads import render_salads
+from user_interface.util import clear_current_order
 
 
 def render_order(window):
     clear_window(window)
+    clear_current_order()
     current_user = get_current_user()
     current_username = current_user['username']
     tk.Label(window, text=f'Current user: {current_username}', fg='#F1B911').grid(row=0, column=0)
@@ -42,7 +44,7 @@ def render_order(window):
               width=11,
               fg='white',
               font=('Helvetica', '11'),
-              command=lambda: finish_order(window, current_username)).grid(row=13, column=0)
+              command=lambda: finish_order(window, current_username, render_order)).grid(row=13, column=0)
 
 
     # tk.Button(window,
